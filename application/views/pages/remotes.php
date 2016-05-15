@@ -11,10 +11,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a target="_blank" class="nav-white" href="<?php echo base_url('manages/remoter'); ?>"><i class="glyphicon glyphicon-th"></i></a>
+              <a title="Manage Profile" class="nav-white" href="<?php echo base_url('logins/profile/'.$this->session->userdata('uid')); ?>"><i class="glyphicon glyphicon-user"></i></a>
             </li>
             <li>
-              <a class="nav-white" href="<?php echo base_url('logins/sign_out'); ?>"><i class="glyphicon glyphicon-log-in"></i></a>
+              <a title="Go to Remoter" target="_blank" class="nav-white" href="<?php echo base_url('manages/remoter'); ?>"><i class="glyphicon glyphicon-th"></i></a>
+            </li>
+            <li>
+              <a title="Sign me out" class="nav-white" href="<?php echo base_url('logins/sign_out'); ?>"><i class="glyphicon glyphicon-log-in"></i></a>
             </li>
         </ul>
         </div><!--/.nav-collapse -->
