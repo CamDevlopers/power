@@ -28,7 +28,7 @@ guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide
 **************************
 Authentication 
 **************************
-Username: admin
+Username: admin, 
 Password: 1234567
 
 *******************
