@@ -205,6 +205,10 @@
                 $('#e_device_air'+val).attr('src','<?php echo base_url('image/air_on.png'); ?>'); 
               });
             }else{
+              $('.btn-off').removeClass('btn-active');
+              $('.btn-off').addClass('btn-disable');
+              $('.btn-on').removeClass('btn-disable');
+              $('.btn-on').addClass('btn-active');
               $('.switch_contac').attr('src','<?php echo base_url('image/img_off.png'); ?>');
               $('.for-air').attr('src','<?php echo base_url('image/air_off.png'); ?>');
             }
